@@ -17,7 +17,7 @@ return new class extends Migration
             $table->integer('valor_produto')->nullable(false);
             $table->text('descricao_produto')->nullable();
             $table->boolean('bl_produto_verificado');
-            $table->float('peso_produto')->nullable();
+            $table->float('peso_produto', 8, 2)->nullable();
             $table->integer('estoque_maximo')->default(100);
             $table->integer('estoque_minimo')->default(1);
             $table->timestamps();
